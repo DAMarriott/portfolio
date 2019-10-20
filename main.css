@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.imgs img {
+  background-color:#aaa;
+  height: 200px;
+}
+
+img {
+  display: inline-block;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  width: 8%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 50%; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+header {
+  padding: 3% 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
