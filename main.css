@@ -8,14 +8,13 @@
     font-family: "Open Sans",
     sans-serif; 
     font-size: 3vw;
-    color: #444;
     text-align: center;
     line-height: 1.5;
-    
   }
   
   img {
     height: 250px;
+    width: auto;
     display: block;
     border-radius: 0;
   }
@@ -32,13 +31,12 @@
   }
   
   nav {
-    width: 8%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 50%; /* Stay at the top */
-    right: 5px;
+    right: 15px;
     overflow-x: hidden; /* Disable horizontal scroll */
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.76);
     font-size: 15px;
     text-align: right;
   }
@@ -64,12 +62,13 @@
     background-color: rgb(10, 43, 23);
     color: white;
     border-radius: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   section {
     min-height: 200px;
     padding: 2%;
-    background-color: #bbb;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +88,7 @@
   }
 
   .bio {
-    width: 85%;
+    width: 75%;
     padding: 1%;
   }
 
