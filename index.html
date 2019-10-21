@@ -1,35 +1,64 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
-    <main role="main">
-        <div class="imgs" role="img-carousel">
-          <img src="http://u.cubeupload.com/dm93/IMG1721.jpeg">
-          <img src="http://u.cubeupload.com/dm93/IMG1932.jpeg">
-          <img src="http://u.cubeupload.com/dm93/IMG0360.jpeg">
-          <img src="http://u.cubeupload.com/dm93/IMG0047.jpg">
-          <img src="http://u.cubeupload.com/dm93/IMG1633.jpeg">
+    <nav role="navigation">
+        <a href="#top">Main</a>
+        <a href="#bio">Bio</a>
+        <a href="#projects">Projects</a>
+    </nav>
+    <main class="main" role="main" id="top">
+        <div class="slideshow-container" role="img-carousel">
+          <div class="mySlides fade">
+            <img src="http://u.cubeupload.com/dm93/IMG1721.jpeg">
+            <div class="text">Eiffel Tower, summer 2019.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="http://u.cubeupload.com/dm93/IMG1932.jpeg">
+            <div class="text">My cat, Cash.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="http://u.cubeupload.com/dm93/IMG0360.jpeg">
+            <div class="text">Sunset in Venice.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="http://u.cubeupload.com/dm93/IMG0047.jpg">
+            <div class="text">Sunrise on Mt Fuji, summer 2019.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="http://u.cubeupload.com/dm93/IMG1633.jpeg">
+            <div class="text">My mom and I, Tower of Piza, summer 2019.</div>
+          </div>
         </div>
-        
-        <header role="banner">
-            <h1>Hi, my name is DA Marriott. I am a front-end engineer proficient in Javascript and HTML/CSS.
-            </h1>
+
+        <header role="banner" class="banner" id="bio">
+            <p class="headline">Hi, my name is</p>
+            <p class="name" style="color:rgb(10, 43, 23);">D.A. Marriott</p>
+            <p class="headline">and I am a front-end engineer proficient in Javascript and HTML/CSS.</p>
         </header>
 
         <section class="bio">
-            <p>I am a web developer and recent graduate of Thinkful's fullstack engineering program. I love web development and coding because using creativity and problem solving abilities in this capacity gives me total fulfilment and happiness. I am constantly learning and acquiring new skills within the field out of curiosity and an insatiable hunger for knowledge. </p>
+            <p style="background-color: white; color: rgb(10, 43, 23);">I love web development and coding because using <span style="font-weight: bolder">creativity</span> and <span style="font-weight: bolder">problem solving</span> abilities in this capacity gives me total fulfilment and happiness. I am constantly learning and acquiring new skills within the field out of <span style="font-weight: bolder">curiosity</span> and an insatiable <span style="font-weight: bolder">hunger</span> for knowledge. </p>
 
-            <p>I like to consider myself a well-rounded human being- spending my time away from a text editor outside playing sports, hiking, lounging on the beach while listening to anything from Young Thug to Led Zeppelin. I appreciate food and having a good conversation over a great meal. I enjoy reading all genres and playing all types of video games, but am constantly wishing I would make more time for both.</p>
+            <p style="font-size: 2.5vw; background-color: rgb(10, 43, 23); color: white">I spend my time away from a text editor outside: playing sports, hiking, lounging on the beach while listening to anything from Jay-Z to Led Zeppelin. I appreciate food and having a good conversation over a great meal. When I can find the time, I enjoy reading all genres and playing all types of video games.</p>
         </section>
 
-        <section>
+        <section id="projects" class="projects">
             <p>My Quiz App: The Young Thug Quiz</p>
+            <div class="project">
+                <img src="http://u.cubeupload.com/dm93/thugquizapp.jpg">
+            </div>
             <p>An interactive webpage testing the user's knowledge of Young Thug.</p>
             <p>Contains HTML5, CSS, Javascript, Jquery</p>
             <p>Link to live app: https://damarriott.github.io/quiz-app/</p>
@@ -48,6 +77,12 @@
             Section 4
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+        <a type="email">dmarriott93@gmail.com</a>
+        <a type="phone">2036443507</a>
+        <a href="https://github.com/DAMarriott">GitHub</a>
+        <a href="https://www.linkedin.com/in/danny-marriott-4507b272/">LinkedIn</a>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
