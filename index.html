@@ -1,89 +1,191 @@
 !<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-    <nav role="navigation">
-        <a href="#top">Main</a>
-        <a href="#bio">Bio</a>
-        <a href="#projects">Projects</a>
-    </nav>
+  </head>
+  <body>
+    <div role="navigation" class="nav">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <div class="menu">
+        <ul>
+          <li><a href="#top">Main</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+
     <main class="main" role="main" id="top">
-        <div class="slideshow-container" role="img-carousel">
-          <div class="mySlides fade">
-            <img src="http://u.cubeupload.com/dm93/IMG1721.jpeg">
-            <div class="text">Eiffel Tower, summer 2019.</div>
-          </div>
+      <header role="banner" class="banner">
+        <p class="name" style="color:rgb(10, 43, 23); display: inline;">
+          Daniel A. Marriott
+        </p>
+        <p class="headline">
+          Front-end engineer skilled in Javascript and HTML/CSS
+        </p>
+      </header>
 
-          <div class="mySlides fade">
-            <img src="http://u.cubeupload.com/dm93/IMG1932.jpeg">
-            <div class="text">My cat, Cash.</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="http://u.cubeupload.com/dm93/IMG0360.jpeg">
-            <div class="text">Sunset in Venice.</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="http://u.cubeupload.com/dm93/IMG0047.jpg">
-            <div class="text">Sunrise on Mt Fuji, summer 2019.</div>
-          </div>
-
-          <div class="mySlides fade">
-            <img src="http://u.cubeupload.com/dm93/IMG1633.jpeg">
-            <div class="text">My mom and I, Tower of Piza, summer 2019.</div>
+      <section id="projects" class="projects">
+        <p class="projectName">My Quiz App: The Young Thug Quiz</p>
+        <div class="project">
+          <img src="http://u.cubeupload.com/dm93/thugquizapp.jpg" />
+        </div>
+        <div class="projectBlurb">
+          <p>
+            An interactive webpage testing the user's knowledge of Young Thug.
+          </p>
+          <p>Contains HTML5, CSS, Javascript, Jquery</p>
+          <div class="projectLinks">
+            <a href="https://damarriott.github.io/quiz-app/">Link to live app</a
+            ><span> |</span>
+            <a href="https://github.com/DAMarriott/quiz-app">Link to repo</a>
           </div>
         </div>
+      </section>
 
-        <header role="banner" class="banner" id="bio">
-            <p class="headline">Hi, my name is</p>
-            <p class="name" style="color:rgb(10, 43, 23);">D.A. Marriott</p>
-            <p class="headline">and I am a front-end engineer proficient in Javascript and HTML/CSS.</p>
-        </header>
+      <section>
+        Project 2
+      </section>
 
-        <section class="bio">
-            <p style="background-color: white; color: rgb(10, 43, 23);">I love web development and coding because using <span style="font-weight: bolder">creativity</span> and <span style="font-weight: bolder">problem solving</span> abilities in this capacity gives me total fulfilment and happiness. I am constantly learning and acquiring new skills within the field out of <span style="font-weight: bolder">curiosity</span> and an insatiable <span style="font-weight: bolder">hunger</span> for knowledge. </p>
+      <section>
+        Project 3
+      </section>
 
-            <p style="font-size: 3vw; background-color: rgb(10, 43, 23); color: white">I spend my time away from a text editor outside: playing sports, hiking, lounging on the beach while listening to anything from Jay-Z to Led Zeppelin. I appreciate food and having a good conversation over a great meal. When I can find the time, I enjoy reading all genres and playing all types of video games.</p>
-        </section>
+      <section>
+        Project 4
+      </section>
 
-        <section id="projects" class="projects">
-            <p>My Quiz App: The Young Thug Quiz</p>
-            <div class="project">
-                <img src="http://u.cubeupload.com/dm93/thugquizapp.jpg">
-            </div>
-            <p>An interactive webpage testing the user's knowledge of Young Thug.</p>
-            <p>Contains HTML5, CSS, Javascript, Jquery</p>
-            <p>Link to live app: https://damarriott.github.io/quiz-app/</p>
-            <p>Link to repo: https://github.com/DAMarriott/quiz-app</p>
-        </section>
+      <section class="bio" id="bio">
+        <p style="background-color: white; color: rgb(10, 43, 23);">
+          I love web development and coding because using
+          <span style="font-weight: bolder">creativity</span> and
+          <span style="font-weight: bolder">problem solving</span> abilities in
+          this capacity gives me total fulfilment and happiness. I am constantly
+          learning and acquiring new skills within the field out of
+          <span style="font-weight: bolder">curiosity</span> and an insatiable
+          <span style="font-weight: bolder">hunger</span> for knowledge.
+        </p>
 
-        <section>
-            Section 3
-        </section>
+        <p style="background-color: rgb(10, 43, 23); color: white">
+          I spend my time away from a text editor outside: playing sports,
+          hiking, lounging on the beach while listening to anything from Jay-Z
+          to Led Zeppelin. I appreciate food and having a good conversation over
+          a great meal. When I can find the time, I enjoy reading all genres and
+          playing all types of video games.
+        </p>
+      </section>
 
-        <section>
-            Project 3
-        </section>
-        
-        <section>
-            Section 4
-        </section>
+      <div class="slideshow-container" role="img-carousel">
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1721.jpeg" />
+          <div class="text">Eiffel Tower, summer 2019.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1932.jpeg" />
+          <div class="text">My cat, Cash.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG0360.jpeg" />
+          <div class="text">Sunset in Venice.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG0047.jpg" />
+          <div class="text">Sunrise on Mt Fuji, summer 2019.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1633.jpeg" />
+          <div class="text">My mom and I, Tower of Piza, summer 2019.</div>
+        </div>
+      </div>
+
+      <section id="resume" class="resume">
+        <h2>Curriculum Vitae</h2>
+        <div>
+          <h3>Summary</h3>
+          <p>
+            4+ years of experience in marketing, sales, accounts, and project
+            management.
+          </p>
+          <p>Graduate of Thinkful's Fullstack Engineering program.</p>
+          <p>Strong oral and written communication skills.</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>University of Maryland at College Park, College Park, Maryland</p>
+          <p>
+            Bachelor's Degree - Business Management-Marketing, Graduated May
+            2015
+          </p>
+          <ul>
+            <li>College Park Scholars Program - Media, Self, and Society</li>
+            <li>Smith School of Business Fellows Program</li>
+            <li>
+              Tau Kappa Epsilon Fraternity: Served on Executive Board as Risk
+              Manager and Vice President
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Employment History</h3>
+          <p>Cheetah Digital, Los Angeles, California</p>
+          <p>Client Success Manager, May 2017 - August 2019</p>
+          <ul>
+            <li>
+              Drove retention and growth among most valuable customers by
+              understanding business needs and guiding success.
+            </li>
+            <li>
+              Managed and facilitated customer initiated projects by leading
+              several teams towards goals.
+            </li>
+            <li>
+              Collaborated closely with Sales to support pilot customers,
+              renewals, and expansion opportunities.
+            </li>
+            <li>
+              Marshalled resources across the org as needed to support customers
+              needs.
+            </li>
+            <li>
+              Represented the voice of the customer to inform our sales process
+              and product roadmap.
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer role="content-info">
-        <a type="email">dmarriott93@gmail.com</a>
-        <a type="phone">2036443507</a>
-        <a href="https://github.com/DAMarriott">GitHub</a>
-        <a href="https://www.linkedin.com/in/danny-marriott-4507b272/">LinkedIn</a>
+      <a type="email">dmarriott93@gmail.com</a>
+      <a type="phone">2036443507</a>
+      <a href="https://github.com/DAMarriott">GitHub</a>
+      <a href="https://www.linkedin.com/in/danny-marriott-4507b272/"
+        >LinkedIn</a
+      >
     </footer>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
