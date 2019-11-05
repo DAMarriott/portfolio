@@ -1,331 +1,192 @@
-* {
-  box-sizing: border-box;
-  font-family: "Blinker", sans-serif;
-  color: rgb(10, 43, 23);
-}
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div role="navigation" class="nav">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <div class="menu">
+        <ul>
+          <li><a href="#top">Main</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
 
-body {
-  font-size: 1rem;
-  text-align: center;
-  background-image: url("https://i.ibb.co/PNQb89F/portfolio-html-background-1.jpg");
-  background-size: auto;
-}
+    <main class="main" role="main" id="top">
+      <header role="banner" class="banner">
+        <p class="name" style="color:rgb(10, 43, 23); display: inline;">
+          Daniel A. Marriott
+        </p>
+        <p class="headline">
+          Front-end engineer skilled in Javascript and HTML/CSS
+        </p>
+      </header>
 
-main {
-  margin-top: 3rem;
-}
+      <section id="projects" class="projects">
+        <p class="projectName">My Quiz App: The Young Thug Quiz</p>
+        <div class="project">
+          <img src="http://u.cubeupload.com/dm93/thugquizapp.jpg" />
+        </div>
+        <div class="projectBlurb">
+          <p>
+            An interactive webpage testing the user's knowledge of Young Thug.
+          </p>
+          <p>Contains HTML5, CSS, Javascript, Jquery</p>
+          <div class="projectLinks">
+            <a href="https://damarriott.github.io/quiz-app/">Link to live app</a
+            ><span> |</span>
+            <a href="https://github.com/DAMarriott/quiz-app">Link to repo</a>
+          </div>
+        </div>
+      </section>
 
-img {
-  height: 250px;
-  width: auto;
-  display: block;
-  border-radius: 0;
-}
+      <section>
+        Project 2
+      </section>
 
-.projectName {
-  background-color: white;
-  text-align: center;
-}
+      <section>
+        Project 3
+      </section>
 
-.projectBlurb {
-  background-color: rgb(10, 43, 23);
-  text-align: center;
-}
+      <section>
+        Project 4
+      </section>
 
-.projectBlurb p,
-.projectBlurb a,
-.projectBlurb span {
-  color: white;
-}
+      <section class="bio" id="bio">
+        <p style="background-color: white; color: rgb(10, 43, 23);">
+          I love web development and coding because using
+          <span style="font-weight: bolder">creativity</span> and
+          <span style="font-weight: bolder">problem solving</span> abilities in
+          this capacity gives me total fulfilment and happiness. I am constantly
+          learning and acquiring new skills within the field out of
+          <span style="font-weight: bolder">curiosity</span> and an insatiable
+          <span style="font-weight: bolder">hunger</span> for knowledge.
+        </p>
 
-.projectBlurb a {
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
-}
+        <p style="background-color: rgb(10, 43, 23); color: white">
+          I spend my time away from a text editor outside: playing sports,
+          hiking, lounging on the beach while listening to anything from Jay-Z
+          to Led Zeppelin. I appreciate food and having a good conversation over
+          a great meal. When I can find the time, I enjoy reading all genres and
+          playing all types of video games.
+        </p>
+      </section>
 
-.name {
-  font-family: "Roboto Slab", serif;
-  text-transform: uppercase;
-  text-shadow: 0 -1px 0, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
-    0 4px 0 #282828, 0 5px 0 #ffffff, 0 6px 0 #ffffff, 0 7px 0 #ffffff,
-    0 22px 30px rgba(0, 0, 0, 0.9);
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
-}
+      <div class="slideshow-container" role="img-carousel">
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1721.jpeg" />
+          <div class="text">Eiffel Tower, summer 2019.</div>
+        </div>
 
-.nav {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  margin: 0;
-  top: 0;
-  border-radius: 0;
-  border-bottom: black;
-}
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1932.jpeg" />
+          <div class="text">My cat, Cash.</div>
+        </div>
 
-.nav a {
-  display: block;
-  text-decoration: none;
-  display: none;
-}
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG0360.jpeg" />
+          <div class="text">Sunset in Venice.</div>
+        </div>
 
-header {
-  padding: 3% 0;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG0047.jpg" />
+          <div class="text">Sunrise on Mt Fuji, summer 2019.</div>
+        </div>
 
-.headline {
-  background-color: rgb(10, 43, 23);
-  color: white;
-  border-radius: 4%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+        <div class="mySlides fade">
+          <img src="http://u.cubeupload.com/dm93/IMG1633.jpeg" />
+          <div class="text">My mom and I, Tower of Piza, summer 2019.</div>
+        </div>
+      </div>
 
-section {
-  min-height: 200px;
-  padding: 2%;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.project img {
-  width: 90%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bio {
-  width: 75%;
-  padding: 1%;
-}
-
-.bio p {
-  display: inline-block;
-  width: 49.5%;
-  vertical-align: middle;
-  padding: 10px;
-}
-
-section:nth-child(even) {
-  background-color: rgba(221, 221, 221, 0.493);
-}
-
-section:nth-child(odd) {
-  background-color: rgba(221, 221, 221, 0.295);
-}
-
-.slideshow-container {
-  position: relative;
-  border: 10px solid rgb(0, 0, 0);
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.text {
-  display: none;
-  position: absolute;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  border-radius: 0;
-}
-
-.slideshow-container:hover .text {
-  display: block;
-  bottom: 0;
-}
-
-/* Fading animation */
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 0;
-}
-
-.nav li {
-  list-style: none;
-}
-
-.nav li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.nav li a:hover,
-.nav .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-/* menu */
-
-.nav .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* menu icon */
-
-.nav .menu-icon {
-  cursor: pointer;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.nav .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 18px;
-}
-
-.nav .menu-icon .navicon:before,
-.nav .menu-icon .navicon:after {
-  background: #333;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.nav .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.nav .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.nav .menu-btn {
-  display: none;
-}
-
-.nav .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.nav .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.nav .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.nav .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-.nav .menu-btn ~ .menu {
-  display: none;
-}
-
-.nav .menu-btn:checked ~ .menu {
-  display: block;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .nav li {
-    float: left;
-  }
-  .nav li a {
-    padding: 20px 30px;
-  }
-  .nav .menu {
-    display: block;
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .nav .menu-icon {
-    display: none;
-  }
-
-  .nav .menu-btn ~ .menu {
-    display: block;
-  }
-
-  .name {
-    font-family: "Roboto Slab", serif;
-    font-size: 4rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  body {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1500px) {
-  section {
-    width: 1300px;
-  }
-
-  .bio {
-    width: 1300px;
-  }
-}
+      <section id="resume" class="resume">
+        <h2>Curriculum Vitae</h2>
+        <div>
+          <h3>Summary</h3>
+          <p>
+            4+ years of experience in marketing, sales, accounts, and project
+            management.
+          </p>
+          <p>Graduate of Thinkful's Fullstack Engineering program.</p>
+          <p>Strong oral and written communication skills.</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>University of Maryland at College Park, College Park, Maryland</p>
+          <p>
+            Bachelor's Degree - Business Management-Marketing, Graduated May
+            2015
+          </p>
+          <ul>
+            <li>College Park Scholars Program - Media, Self, and Society</li>
+            <li>Smith School of Business Fellows Program</li>
+            <li>
+              Tau Kappa Epsilon Fraternity: Served on Executive Board as Risk
+              Manager and Vice President
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Employment History</h3>
+          <p>Cheetah Digital, Los Angeles, California</p>
+          <p>Client Success Manager, May 2017 - August 2019</p>
+          <ul>
+            <li>
+              Drove retention and growth among most valuable customers by
+              understanding business needs and guiding success.
+            </li>
+            <li>
+              Managed and facilitated customer initiated projects by leading
+              several teams towards goals.
+            </li>
+            <li>
+              Collaborated closely with Sales to support pilot customers,
+              renewals, and expansion opportunities.
+            </li>
+            <li>
+              Marshalled resources across the org as needed to support customers
+              needs.
+            </li>
+            <li>
+              Represented the voice of the customer to inform our sales process
+              and product roadmap.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer role="content-info">
+      <h3>Contact</h3>
+      <a href="mailto:dmarriott93@gmail.com">dmarriott93@gmail.com</a
+      ><span> |</span> <a href="call:2036443507">2036443507</a><span> |</span>
+      <a href="https://github.com/DAMarriott">GitHub</a><span> |</span>
+      <a href="https://www.linkedin.com/in/danny-marriott-4507b272/"
+        >LinkedIn</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
