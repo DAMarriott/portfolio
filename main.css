@@ -45,14 +45,18 @@ img {
 }
 
 .name {
+  text-align: center;
+}
+
+.name span {
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
   text-shadow: 0 -1px 0, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
     0 4px 0 #282828, 0 5px 0 #ffffff, 0 6px 0 #ffffff, 0 7px 0 #ffffff,
     0 22px 30px rgba(0, 0, 0, 0.9);
   font-size: 2rem;
+  display: inline-block;
   width: 100%;
-  text-align: center;
 }
 
 .nav {
@@ -73,13 +77,42 @@ img {
   display: none;
 }
 
+#top::before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+#projects::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+#resume::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+#bio::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
 header {
   padding: 3% 0;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .headline {
@@ -93,7 +126,7 @@ header {
 section {
   min-height: 200px;
   padding: 2%;
-  width: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -108,15 +141,13 @@ section {
 }
 
 .bio {
-  width: 75%;
-  padding: 1%;
+  width: 90%;
 }
 
 .bio p {
   display: inline-block;
-  width: 49.5%;
+  width: 49%;
   vertical-align: middle;
-  padding: 10px;
 }
 
 section:nth-child(even) {
@@ -132,6 +163,7 @@ section:nth-child(odd) {
   border: 10px solid rgb(0, 0, 0);
   display: inline-block;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .text {
@@ -308,7 +340,7 @@ section:nth-child(odd) {
     display: block;
   }
 
-  .name {
+  .name span {
     font-family: "Roboto Slab", serif;
     font-size: 4rem;
     width: 100%;
