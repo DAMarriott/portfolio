@@ -15,6 +15,13 @@ main {
   margin-top: 3rem;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -2.5rem;
+  visibility: hidden;
+}
+
 img {
   height: 250px;
   width: auto;
@@ -77,37 +84,6 @@ img {
   display: none;
 }
 
-#top::before {
-  content: "";
-  display: block;
-  height: 75px;
-  margin-top: -75px;
-  visibility: hidden;
-}
-
-#projects::before {
-  content: "";
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  visibility: hidden;
-}
-#resume::before {
-  content: "";
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  visibility: hidden;
-}
-
-#bio::before {
-  content: "";
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  visibility: hidden;
-}
-
 header {
   padding: 3% 0;
   width: 60%;
@@ -133,6 +109,10 @@ section {
   text-align: left;
 }
 
+.main-header-section {
+  background-color: white;
+}
+
 .project img {
   width: 90%;
   height: auto;
@@ -148,6 +128,16 @@ section {
   display: inline-block;
   width: 49%;
   vertical-align: middle;
+  flex: 1;
+  padding: 10px;
+}
+
+.cv-block {
+  background-color: white;
+}
+
+.flex {
+  display: flex;
 }
 
 section:nth-child(even) {
@@ -156,60 +146,6 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
   background-color: rgba(221, 221, 221, 0.295);
-}
-
-.slideshow-container {
-  position: relative;
-  border: 10px solid rgb(0, 0, 0);
-  display: inline-block;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.text {
-  display: none;
-  position: absolute;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  border-radius: 0;
-}
-
-.slideshow-container:hover .text {
-  display: block;
-  bottom: 0;
-}
-
-/* Fading animation */
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .nav ul {
