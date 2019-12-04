@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML wireframe</title>
+    <title>Daniel A. Marriott Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -9,6 +9,7 @@
       href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
     />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" href="favicon-32x32.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Blinker&display=swap"
       rel="stylesheet"
@@ -34,20 +35,27 @@
         </ul>
       </div>
     </div>
-
+    <a class="anchor" id="top"></a>
     <main class="main" role="main" id="top">
-      <header role="banner" class="banner">
-        <p class="name" style="color:rgb(10, 43, 23); display: inline;">
-          <span>Daniel</span>
-          <span>A.</span>
-          <span>Marriott</span>
-        </p>
-        <p class="headline">
-          Front-end engineer skilled in Javascript and HTML/CSS
-        </p>
-      </header>
-
-      <section id="projects" class="projects">
+      <section class="main-header-section">
+        <header role="banner" class="banner">
+          <p class="name" style="color:rgb(10, 43, 23); display: inline;">
+            <span>Daniel</span>
+            <span>A.</span>
+            <span>Marriott</span>
+          </p>
+          <p class="headline">
+            Front-end engineer skilled in Javascript and HTML/CSS
+          </p>
+        </header>
+      </section>
+      <a class="anchor" id="projects"></a>
+      <section class="projects">
+        <h2
+          style="color: white; background-color:rgb(10, 43, 23); padding: 2px; text-align: center;"
+        >
+          Projects
+        </h2>
         <p class="projectName">My Quiz App: The Young Thug Quiz</p>
         <div class="project">
           <img
@@ -70,138 +78,109 @@
           </div>
         </div>
       </section>
+      <a class="anchor" id="bio"></a>
+      <section class="bio">
+        <h2
+          style="color: white; background-color:rgb(10, 43, 23); padding: 2px; text-align: center;"
+        >
+          Who Am I?
+        </h2>
+        <div class="flex">
+          <p style="background-color: white; color: rgb(10, 43, 23);">
+            I love web development and coding because using
+            <span style="font-weight: bolder">creativity</span> and
+            <span style="font-weight: bolder">problem solving</span> abilities
+            in this capacity gives me total fulfillment and happiness. I am
+            constantly learning and acquiring new skills within the field out of
+            <span style="font-weight: bolder">curiosity</span> and an insatiable
+            <span style="font-weight: bolder">hunger</span> for knowledge.
+          </p>
 
-      <section class="bio" id="bio">
-        <p style="background-color: white; color: rgb(10, 43, 23);">
-          I love web development and coding because using
-          <span style="font-weight: bolder">creativity</span> and
-          <span style="font-weight: bolder">problem solving</span> abilities in
-          this capacity gives me total fulfillment and happiness. I am
-          constantly learning and acquiring new skills within the field out of
-          <span style="font-weight: bolder">curiosity</span> and an insatiable
-          <span style="font-weight: bolder">hunger</span> for knowledge.
-        </p>
-
-        <p style="background-color: rgb(10, 43, 23); color: white">
-          I spend my time away from a text editor outside: playing sports,
-          hiking, lounging on the beach while listening to anything from Jay-Z
-          to Led Zeppelin. I appreciate food and having a good conversation over
-          a great meal. When I can find the time, I enjoy reading all genres and
-          playing all types of video games.
-        </p>
+          <p style="background-color: rgb(10, 43, 23); color: white;">
+            I spend my time away from a text editor outside: playing sports,
+            hiking, lounging on the beach while listening to anything from Jay-Z
+            to Led Zeppelin. I appreciate food and having a good conversation
+            over a great meal. When I can find the time, I enjoy reading all
+            genres and playing all types of video games.
+          </p>
+        </div>
       </section>
-
-      <div class="slideshow-container" role="img-carousel">
-        <div class="mySlides fade">
-          <img
-            alt="Eiffel Tower, summer 2019."
-            src="http://u.cubeupload.com/dm93/IMG1721.jpeg"
-          />
-          <div class="text">Eiffel Tower, summer 2019.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            alt="My cat, Cash."
-            src="http://u.cubeupload.com/dm93/IMG1932.jpeg"
-          />
-          <div class="text">My cat, Cash.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            alt="Sunset in Venice."
-            src="http://u.cubeupload.com/dm93/IMG0360.jpeg"
-          />
-          <div class="text">Sunset in Venice.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            alt="Sunrise on Mt Fuji, summer 2019."
-            src="http://u.cubeupload.com/dm93/IMG0047.jpg"
-          />
-          <div class="text">Sunrise on Mt Fuji, summer 2019.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            alt="My mom and I, Tower of Piza, summer 2019."
-            src="http://u.cubeupload.com/dm93/IMG1633.jpeg"
-          />
-          <div class="text">My mom and I, Tower of Piza, summer 2019.</div>
-        </div>
-      </div>
-
-      <section id="resume" class="resume">
+      <a class="anchor" id="resume"></a>
+      <section class="resume">
         <h2
           style="color: white; background-color:rgb(10, 43, 23); padding: 2px; text-align: center;"
         >
           Curriculum Vitae
         </h2>
-        <div>
-          <h3>Summary</h3>
-          <p>
-            4+ years of experience in marketing, sales, accounts, and project
-            management.
-          </p>
-          <p>Graduate of Thinkful's Fullstack Engineering program.</p>
-          <p>Strong oral and written communication skills.</p>
-        </div>
-        <div>
-          <h3>Education</h3>
-          <p>University of Maryland at College Park, College Park, Maryland</p>
-          <p>
-            Bachelor's Degree - Business Management-Marketing, Graduated May
-            2015
-          </p>
-          <ul>
-            <li>College Park Scholars Program - Media, Self, and Society</li>
-            <li>Smith School of Business Fellows Program</li>
-            <li>
-              Tau Kappa Epsilon Fraternity: Served on Executive Board as Risk
-              Manager and Vice President
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Employment History</h3>
-          <p>Cheetah Digital, Los Angeles, California</p>
-          <p>Client Success Manager, May 2017 - August 2019</p>
-          <ul>
-            <li>
-              Drove retention and growth among most valuable customers by
-              understanding business needs and guiding success.
-            </li>
-            <li>
-              Managed and facilitated customer initiated projects by leading
-              several teams towards goals.
-            </li>
-            <li>
-              Collaborated closely with Sales to support pilot customers,
-              renewals, and expansion opportunities.
-            </li>
-            <li>
-              Marshalled resources across the org as needed to support customers
-              needs.
-            </li>
-            <li>
-              Represented the voice of the customer to inform our sales process
-              and product roadmap.
-            </li>
-          </ul>
+        <div class="cv-block">
+          <div>
+            <h3>Summary</h3>
+            <p>
+              4+ years of experience in marketing, sales, accounts, and project
+              management.
+            </p>
+            <p>Graduate of Thinkful's Fullstack Engineering program.</p>
+            <p>Strong oral and written communication skills.</p>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <p>
+              University of Maryland at College Park, College Park, Maryland
+            </p>
+            <p>
+              Bachelor's Degree - Business Management-Marketing, Graduated May
+              2015
+            </p>
+            <ul>
+              <li>College Park Scholars Program - Media, Self, and Society</li>
+              <li>Smith School of Business Fellows Program</li>
+              <li>
+                Tau Kappa Epsilon Fraternity: Served on Executive Board as Risk
+                Manager and Vice President
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Employment History</h3>
+            <p>Cheetah Digital, Los Angeles, California</p>
+            <p>Client Success Manager, May 2017 - August 2019</p>
+            <ul>
+              <li>
+                Drove retention and growth among most valuable customers by
+                understanding business needs and guiding success.
+              </li>
+              <li>
+                Managed and facilitated customer initiated projects by leading
+                several teams towards goals.
+              </li>
+              <li>
+                Collaborated closely with Sales to support pilot customers,
+                renewals, and expansion opportunities.
+              </li>
+              <li>
+                Marshalled resources across the org as needed to support
+                customers needs.
+              </li>
+              <li>
+                Represented the voice of the customer to inform our sales
+                process and product roadmap.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer role="content-info">
       <h3>Contact</h3>
       <a href="mailto:dmarriott93@gmail.com">dmarriott93@gmail.com</a
-      ><span> |</span> <a href="https://github.com/DAMarriott">GitHub</a
       ><span> |</span>
-      <a href="https://www.linkedin.com/in/danny-marriott-4507b272/"
+      <a target="_blank" href="https://github.com/DAMarriott">GitHub</a
+      ><span> |</span>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/danny-marriott-4507b272/"
         >LinkedIn</a
       >
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
